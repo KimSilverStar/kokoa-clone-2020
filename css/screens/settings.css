@@ -1,0 +1,48 @@
+.settings__setting {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings__setting-column {
+  position: relative;
+}
+
+.settings__setting i {
+  opacity: 0.8;
+  margin-right: 20px;
+  font-size: 22px;
+}
+
+.settings__setting-column:last-child {
+  opacity: 0.5;
+}
+
+.settings__setting:nth-child(3) {
+  padding: 35px 0px;
+}
+
+.settings__setting:nth-child(4) {
+  padding-top: 35px;
+}
+
+.settings__setting:last-child {
+  border: none;
+}
+
+.settings__setting-column .badge {
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  text-align: center;
+  position: absolute;
+  left: 125px;
+  top: 1px;
+}
+
+.settings__setting:nth-child(9) .settings__setting-column .badge:last-child {
+  left: 130px;
+}

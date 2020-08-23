@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="css/styles.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Kokoa Clone</title>
+  </head>
+
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+
+      <div class="status-bar__column">
+        <span>21:43</span>
+      </div>
+
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+      <p class="welcome-header__text">
+        If you have a Kokoa Account,<br />
+        log in with your email or phone number.
+      </p>
+    </header>
+
+    <!-- 보통 id는 거의 안쓰고 class로 해결을 하지만
+이번 course에서 만드는 clone은 form이 1, 2개 정도로
+예상되므로 그냥 id를 썼음! -->
+    <form id="login-form" action="friends.html" method="get">
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <a class="btn__sign-up" href="#">Sign Up</a>
+      <a class="btn__find" href="#">Find Kokoa Account or Password</a>
+    </form>
+    <!-- form 태그 안의 링크 a 태그는 사실 구조상으로 form 태그 바깥에 있어도 되지만
+    (원래 바깥에 뒀음)
+    그렇게 되면 CSS로 styling 할때 a 태그를 위한 별도의 id나 class를 추가해야하므로
+    그냥 form 태그 안으로 옮겼음 -->
+
+    <!-- <div id="no-mobile">
+      <span>Your screen is too big</span>
+    </div> -->
+
+    <script
+      src="https://kit.fontawesome.com/80fb7411de.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

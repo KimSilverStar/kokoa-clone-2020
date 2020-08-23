@@ -1,0 +1,75 @@
+#friends-display-link {
+  text-align: center;
+  display: block; /* a 태그는 inline이므로 위치 정렬을 위해 block으로 바꿈 */
+  background-color: #fafafa;
+  padding: 15px 0px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  margin-top: -15px;
+}
+
+#friends-display-link i {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.friends-screen {
+  padding: 0px var(--horizontal-space);
+}
+
+.friends-screen__channel {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+}
+
+.friends-screen__friends {
+  margin-top: 20px;
+}
+
+.friends-screen__channel-header,
+.friends-screen__friends-header {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  background-color: var(--color-yellow);
+  position: absolute;
+  width: 100vw; /* 화면 너비의 전체 100% 크기 */
+  height: 100vh; /* 화면 높이의 전체 100% 크기 */
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 132px;
+  color: #3c1e1e;
+  animation: hideSplashScreen 0.3s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+.music_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  border: 2px solid lightgreen;
+  border-radius: 20px;
+}
+
+.music_box span {
+  color: var(--color-grey5);
+  margin-right: 10px;
+}

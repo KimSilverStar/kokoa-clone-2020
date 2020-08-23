@@ -1,0 +1,45 @@
+.alt-header {
+  padding: var(--horizontal-space);
+  padding-top: 50px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center; /* alt-header의 icon들을 모두 중앙에 몰아넣고, 자식 box에서 margin auto 값으로 배열 */
+  align-items: center;
+}
+
+.alt-header__column {
+  width: 33%;
+}
+
+/* x축의 남은 margin 값(여백)을
+   첫번째 column의 margin-right로 지정
+=> 첫번째 column을 왼쪽으로 배치하고,
+   남은 2,3번째 column을 모두 오른쪽으로 몰아넣음 */
+.alt-header__column:first-child {
+  margin-right: auto;
+}
+
+.alt-header__column:nth-child(2) {
+  text-align: center;
+}
+
+/* x축의 남은 margin 값(여백)을
+   마지막(세번째) column의 margin-left로 지정 
+=> 마지막(세번째) column의 왼쪽에 있는 두번째 column이
+   중앙에 배치되고, 마지막 column은 오른쪽에 그대로 있음 */
+.alt-header__column:last-child {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+/* margin-right: auto; margin-left: auto; 를 통해
+   3개의 column이 각각 왼쪽 끝, 중앙, 오른쪽 끝으로 배치됨 */
+
+.alt-header__title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.alt-header__column:last-child span:last-child {
+  margin-left: 20px;
+}

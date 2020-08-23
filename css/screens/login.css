@@ -1,0 +1,83 @@
+.welcome-header {
+  margin: 90px 0px; /* margin: 상하 90px, 좌우 0px */
+  text-align: center; /* text contents를 중앙으로 정렬 */
+  display: flex; /* 자식 요소(h1, p) 정렬을 위한 flex */
+  flex-direction: column; /* 주축: y축, 교차축: x축 */
+  align-items: center; /* 교차축(x축)으로 중앙 배치 */
+  font-weight: 600;
+}
+
+.welcome-header__title {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.7; /* 회색 text 글씨를 위한 투명도 조절 */
+}
+
+#login-form {
+  display: flex; /* form 요소 정렬을 위한 flex 선언 */
+  flex-direction: column; /* 한줄에 form 요소 하나씩 */
+  margin: 0px 30px; /* margin: 상하 0px, 좌우 30px */
+}
+
+/* id가 login-form인 태그의 자식인 input */
+#login-form input {
+  padding: 15px 0px; /* padding: 상하 30px, 좌우 0px */
+  border: none; /* input의 border을 모두 없앰 */
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+/* id가 login-form인 태그의 자식인 input이
+   type="submit"이 아닌 경우
+   => Email과 Password 입력칸 input */
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid var(--color-grey2);
+  /* 아래줄의 border만 다시 그림 */
+  transition: border-color 0.3s ease-in-out;
+  /* input의 border-color가 바뀌면,
+  0.3초 동안 ease-in-out 효과로 바뀌게 됨 */
+}
+
+/* id가 login-form인 태그의 자식이 input이고,
+   그 input의 속성 placeholder */
+#login-form input::placeholder {
+  color: var(--color-grey4);
+}
+
+/* id가 login-form인 태그의 자식이 input이고,
+   그 input의 state(상태)가 focus가 될 경우 */
+#login-form input:focus {
+  border-color: var(--color-yellow);
+} /* 클릭한 input 칸의 border-bottom의 색 표시 */
+
+/* id가 login-form인 태그의 자식이 input이고,
+   그 input이 type="submit"일 경우 */
+#login-form input[type="submit"] {
+  background-color: var(--color-yellow);
+  cursor: pointer; /* 마우스 커서를 올리면 커서가 바뀜 */
+  padding: 20px 0px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#login-form .btn__sign-up {
+  background-color: var(--color-yellow);
+  color: inherit;
+  cursor: pointer;
+  padding: 20px 0px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+#login-form .btn__find {
+  text-align: center;
+  text-decoration: none; /* 링크 글씨의 밑줄을 없앰 */
+  color: inherit;
+  font-size: 13px;
+}

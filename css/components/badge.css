@@ -1,0 +1,11 @@
+.badge {
+  display: flex; /* span의 content를 정렬시키기 위한 flex box 선언 */
+  justify-content: center;
+  align-items: center;
+  width: 30px; /* 원래 span은 inline 요소이므로 width와 height가 없어서 */
+  height: 30px; /* width, height 값을 지정할 수 없지만, */
+  border-radius: 50%; /* display: flex; 선언으로 값을 지정 가능 */
+  background-color: tomato;
+  color: white;
+  font-weight: 600;
+}

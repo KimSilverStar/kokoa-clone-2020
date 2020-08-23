@@ -1,0 +1,10 @@
+:root {
+  --color-yellow: #fad209;
+  --color-grey2: rgba(0, 0, 0, 0.2);
+  --color-grey3: rgba(0, 0, 0, 0.3);
+  --color-grey4: rgba(0, 0, 0, 0.4);
+  --color-grey5: rgba(0, 0, 0, 0.5);
+  --color-chat-screen-bg: #abc1d1;
+  --horizontal-space: 25px;
+  --main-border: 1px solid rgba(0, 0, 0, 0.2);
+}

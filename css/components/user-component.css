@@ -1,0 +1,79 @@
+.user-component {
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.user-component,
+.user-component__column:first-child {
+  display: flex;
+  /* 2개의 column을 정렬하기 위한 flex 선언,
+  첫번째 column 안의 avatar와 text를 정렬하기 위한 flex 선언 */
+  align-items: center;
+}
+
+/* 중간(기본) 크기의 avatar(프로필) */
+.user-component__avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 27px;
+  margin-right: 20px;
+}
+
+.user-component__title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.user-component__subtitle {
+  margin-top: 8px;
+  font-size: 17px;
+  color: var(--color-grey5);
+}
+
+.user-component__avatar--xl {
+  width: 80px;
+  height: 80px;
+  border-radius: 30px;
+}
+
+.user-component__avatar--sm {
+  width: 60px;
+  height: 60px;
+  border-radius: 23px;
+}
+
+.user-component__title--not-bold {
+  font-weight: 400;
+}
+
+.user-component__column:last-child {
+  color: var(--color-grey4);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.user-component__time {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.mark_badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 16px;
+  left: 10px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 1.2px solid tomato;
+  color: tomato;
+  font-size: 14px;
+  font-weight: 550;
+}
+
+.user-component .user-component__column:last-child i {
+  color: #2f363e;
+}
